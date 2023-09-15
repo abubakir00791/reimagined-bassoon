@@ -1,0 +1,249 @@
+/* general styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-text-color: #FFF;
+    --grey-color: #F5F5F5;
+    --gren-text-color: #023F3A;
+    --Secondary-text: #525560;
+    --family-font-family: "Libre Baskerville";
+    --secondary-font-family: "Josefin Sans";
+}
+
+
+
+.container {
+    max-width: 1540px;
+    width: 100%;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header steyles */
+
+header {
+    box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.10);
+    background-color: #FFF;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; 
+}
+
+.hero-info {
+    display: flex;
+    align-items: center;
+    margin-left: 285px;
+}
+
+.cards {
+    display: flex;
+    list-style: none;
+    margin-right: 32px;
+}
+
+.card a {
+    margin-left: 35px;
+    color: #18191F;
+}
+
+.card a:hover {
+    color: #9e9e9e;
+    transition: 1.5s;
+}
+
+.list {
+    display: flex;
+    padding: 10px 22px 10px 23px;
+    justify-content: center;
+    align-items: center;
+    color: #9e9e9e ;
+    border: 1px solid #C13512;
+}
+
+.list:hover {
+    border: 1px solid #ffaf9c;
+    background: #C13512;
+    color: #023F3A;
+    transition: 1.5s;
+}
+
+
+/* main styles */
+
+.main-container {
+    background-image: url(../images/BG.png);
+    position: relative;
+    width: 1540px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.main-container h1 {
+    justify-content: center;
+    padding-top: 119px;
+    color: var(--white-text-color);
+    text-align: center;
+    font-size: 56px;
+}
+
+.main-container p {
+    color: var(--grey-color);
+    text-align: center;
+    font-size: 18px;
+}
+
+.get {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.46px;
+    background-color: transparent;
+    position: absolute;
+    left: 491px;
+    top: 318px;
+    border: 1px solid var(--white-text-color);
+    padding: 15px 50px;
+    margin-left: 50px;
+}
+
+.get:hover {
+    border: 1px solid #023F3A;
+    background: #FFF;
+    color: #023F3A;
+    transition: 1.5s;
+  
+}
+
+.start {
+    color: red;
+    text-align: center;
+    background-color: transparent;
+    position: absolute;
+    left: 800px;
+    top: 318px;
+    border: 1px solid var(--white-text-color);
+    padding: 15px 50px;
+    font-size: 18px;
+    letter-spacing: 0.46px;
+}
+
+.start:hover {
+    border: 1px solid #023F3A;
+    background: #FFF;
+    color: #023F3A;
+    transition: 1.5s;
+}
+
+.main__img {
+    position: absolute;
+    right: 315px;
+    top: 500px;
+}
+
+/* hero styles */
+
+.hero {
+    margin-top: 190px;
+    margin-left: 400px;
+}
+
+.hero-container {
+    display: flex;
+    font-size: 18px;
+    max-width: 1540px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero__info h2 {
+    color: #023F3A;
+    font-family: var(--family-font-family);
+    font-size: 48px;
+    line-height: 120%;
+}
+
+.hero__info p {
+    font-family: var(--secondary-font-family);
+    font-size: 18px;
+    line-height: 130%;
+    width: 632px;
+    color: var(--Secondary-text, #525560);
+}
+
+.hero__items .item-1 {
+    margin-right: 43px;
+    align-items: start;
+    display: flex;
+}  
+
+.hero__items .item-1 span {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+  
+
+.hero__items .items {
+    margin-bottom: 26px;
+    align-items: center;
+    display: flex; 
+}
+
+.item-2 {
+    display: flex;
+    align-items: center;
+}
+
+.hero__items .item-2 span {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.item-3 {
+    display: flex;
+    align-items:center ;
+}
+
+
+.hero__img {
+    width: 100%;
+    max-width: 1540px;
+    font-size: 18px;
+    margin-left: 33px;
+}
+
+.img-1 {
+    width: 545px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    margin-bottom: 30px;
+}
+
+.img-2 {
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    width: 250px;
+    height: 200px;
+    margin-right: 35px;
+    border-radius: 12px;
+}
+
+.img-3 {
+    width: 250px;
+    height: 200px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    border-radius: 12px;
+}
